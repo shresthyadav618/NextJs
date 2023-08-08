@@ -1,6 +1,7 @@
 
 
 
+
  for dynamic routing we have to wrap the folder with [] brackets and we are done.
 
  installation - npx create-next-app@latest ./ 
@@ -27,3 +28,7 @@
 
 
 brah
+
+
+
+
