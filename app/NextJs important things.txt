@@ -1,0 +1,29 @@
+
+
+
+ for dynamic routing we have to wrap the folder with [] brackets and we are done.
+
+ installation - npx create-next-app@latest ./ 
+
+ layout.js and page.js and global.css
+ layout.js -> main entry point of the application , all the components will be wrapped as its children so its the common layout for all the components , reusing most of the things for ex. navbar and footer
+
+ layout.js allows us to set the language, modify the metadata and add certain scripts 
+
+
+ page.js -> represents the home page route of the application , localhost:3000/ will be represented by the page present inside the app folder
+
+ react18 and next18 have two seperate rendering sides, all the components inside the app folder are react server components, nextjs leverages the server side rendering enhancing improved seo and client experience.
+ if we want the server side component into a client side component we have to specify 'use client' on the default server side rendered component 
+ whenever the react hooks are used , we have to specify the component as client side component , otherwise we will run into errors 
+
+ when should one use server component or client ->
+ use server component as default , until and unless you need to ->
+ 1. onClick and onChange etc
+ 2. use react hooks
+ 3. custom hooks
+ 4. react class components
+
+ 
+
+
