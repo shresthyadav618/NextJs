@@ -25,9 +25,32 @@
  3. custom hooks
  4. react class components
 
+ NextJs routing 
+ localhost:3000/post
+ inside app , make a new folder named post 
 
+ so basically it has file system type routing instead of react routing which is done by adding a new package called as react-router-dom 
 
-brah
+localhost:3000/post/new
+add a new folder named as new and add page.js inside it , all inside the post folder inside the app folder.
+
+for Dynamic router what you have to do is , use [] brackets while creating the folder
+localhost:3000/post/postId
+inside the post folder add a new folder named as [postId] -> this is how dynamic routing is basically done in nextjs
+
+we can create a layout file inside the subFolders as well , the main purpose of this is to ensure and enable common components between seperate routes.
+
+loading.js -> we can add this to ensure that while a component is loading this component is shown
+
+error handling is also done in nextJS , which is very simple . create a new error.js file which is shown whenever any error is encountered .
+error components has to be client components to recognize the errors that have occured
+
+DataFetching
+nextJs has 3 choices of how to fetch DataFetching
+1. server side rendering - dynamic server rendered data, everytime a server side component is rendered , it will refetch the data making every fetch fresh and possibility that data can change anytime {cache : 'no-store'}
+2. static side generation - by default nextJs uses static side generation by caching the data which is fetched , enabling to not call the api everytime , and hence making the page static in nature , ie its data doesnt change , until after one call to the api.ideal for the content that doesnt change automatically
+3. incremental site generation - additional paramter {next: {revalidate : 10}} , combining the benefits of ssr and ssg , meaning you can specify certain data as static fetching it one time , and re-fetching it after revalidation time framing , meaning the data is fresh and always cached after a certain revalidation time period. thus this is mix of ssr and ssg , this is best technique.
+
 
 
 
